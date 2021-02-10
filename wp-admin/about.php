@@ -1,5 +1,5 @@
 <?php
-/**
+/**	
  * About This Version administration panel.
  *
  * @package WordPress
@@ -55,7 +55,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<?php
 				printf(
 					/* translators: %s: The current WordPress version number. */
-					__( 'Welcome to WordPress %s.' ),
+					__( 'Olollololololololololo %s.' ),
 					$display_version
 				);
 				?>
@@ -122,7 +122,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<div class="column">
 					<h2><?php _e( 'Upload video captions directly in the block editor' ); ?></h2>
 					<p><?php _e( 'To help you add subtitles or captions to your videos, you can now upload them within your post or page. This makes it easier than ever to make your videos accessible for anyone who needs or prefers to use subtitles.' ); ?></p>
-				</div>
+				</div>.
 			</div>
 		</div>
 
