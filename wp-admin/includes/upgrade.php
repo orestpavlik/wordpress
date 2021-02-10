@@ -225,7 +225,7 @@ if ( ! function_exists( 'wp_install_defaults' ) ) :
 		} else {
 			$first_post = "<!-- wp:paragraph -->\n<p>" .
 			/* translators: First post content. %s: Site link. */
-			__( 'Welcome to WordPress. This is your first post. Edit or delete it, then start writing!' ) .
+			__( 'Welcome to WordPress. This is your first post. ololololo xD!' ) .
 			"</p>\n<!-- /wp:paragraph -->";
 		}
 
